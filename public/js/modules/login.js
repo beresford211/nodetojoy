@@ -6,7 +6,7 @@ angular.module('loginInfo', [])
 
     $scope.login = function() {
       if($scope.loginUser.username === '') {
-        alert("Must Enter User Name");
+        $scope.loginUser.username = 'Must Enter Username';
       } else if($scope.loginUser.password === '') {
         alert("Must Enter Password");
       } else {
